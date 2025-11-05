@@ -27,8 +27,8 @@ export default function Portfolio() {
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div className="py-12">
             <motion.h1 initial="hidden" animate="visible" variants={fadeUp} transition={{delay:0.05}} className="text-4xl md:text-5xl font-extrabold text-white dark:text-white leading-tight">
-               Full Stack Developer specializing in the : 
-           <span className="text-indigo-300"> MERN</span>  stack.
+               Full Stack Developer specializing in the  
+           <span className="text-indigo-300"> MERN</span>  stack
             </motion.h1>
 
             <motion.p initial="hidden" animate="visible" variants={fadeUp} transition={{delay:0.15}} className="mt-6 text-gray-200 max-w-xl">
