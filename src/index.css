@@ -2,7 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom colors via CSS variables for quick use */
+:root {
+  --bg: #0b1020;
+  --muted: #9ca3af;
+  --accent: #7c3aed;
+}
+
+/* Smooth transitions for theme switching */
+html {
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+/* Light theme fallback */
+:root {
+  --page-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #0f172a;
+}
+
+/* When .dark class is present on <html> (Tailwind 'class' mode) */
+.dark {
+  --page-bg: #071029;
+  --card-bg: rgba(255,255,255,0.04);
+  --text: #e6eef8;
+}
+
+/* Optional utility */
+.bg-cream {
+  background: linear-gradient(180deg, rgba(12,18,34,0.92) 0%, rgba(7,10,18,1) 100%);
+}
+
+/* override body font */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--page-bg);
+  color: var(--text);
+}
+html {
   scroll-behavior: smooth;
 }
